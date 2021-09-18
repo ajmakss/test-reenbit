@@ -1,0 +1,9 @@
+.messages {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 80px 1fr 100px;
+    &__content {
+        height: 100%;
+        background: #fafafa;
+    }
+}

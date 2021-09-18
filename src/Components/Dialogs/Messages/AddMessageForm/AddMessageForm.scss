@@ -1,0 +1,20 @@
+.add-message{
+   background: #f5f5f5;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   input {
+       box-sizing: border-box;
+       padding: 5px;
+       height: 45px;
+       width: 90%;
+       border-radius: 20px;
+       border: none;
+   }
+   button {
+       position: absolute;
+       top: 40%;
+       right: 8%;
+   }
+}
