@@ -1,5 +1,5 @@
 import { dialogsAPI } from "../api/api";
-
+import moment from 'moment';
 
 let initialState = {
     dialogs: [
@@ -54,11 +54,16 @@ const dialogsReducer = (state = initialState, action) => {
                 messageId: 1,
                 messageText: action.messageText,
                 userId: action.userId,
-                createdAt: new Date()
+                createdAt: moment().format()
             };
-            state.dialogs.filter(d => d.dialogId === action.dialogId 
-                ? d.messages = [...d.messages, newMessage] 
+
+            let cloneState = JSON.parse(JSON.stringify(state));
+
+            cloneState.dialogs.map(d => d.dialogId === action.dialogId
+                ? d.messages = [...d.messages, newMessage]
                 : d)
+
+            return cloneState;
         default:
             return state
     }
