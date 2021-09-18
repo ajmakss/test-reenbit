@@ -3,10 +3,16 @@ import './SendMessageForm.scss';
 import sendMessage from '../../../../img/send-message.svg'
 
 const SendMessageForm = (props) => {
+
+    const message = React.createRef();
+
+    const onSendMessage = () => {
+        props.addMessage(props.dialogId, message.current.value, 2312)
+    }
     return (
         <div className="add-message">
-            <input type="text" placeholder="Type your message" />
-            <button onClick={() => console.log('click')}>
+            <input ref={message} type="text" placeholder="Type your message" />
+            <button onClick={onSendMessage}>
                 <img src={sendMessage} alt="" />
             </button>
         </div>

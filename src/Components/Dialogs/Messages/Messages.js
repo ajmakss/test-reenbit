@@ -3,11 +3,12 @@ import SendMessageForm from "./SendMessageForm/SendMessageForm";
 import MessageItem from "./MessageItem.js/MessageItem";
 import './Messages.scss';
 import MessagesHeader from "./MessagesHeader/MessagesHeader";
+import moment from 'moment';
 
 const Messages = (props) => {
-    console.log(props.messages[0].messages)
     let messagesItems = props.messages[0].messages.map(m => {
-        return <MessageItem messageText={m.messageText} />
+        let date = moment(m.createdAt).format('M/D/gg, h:mm a');
+        return <MessageItem messageText={m.messageText} createdAt={date}/>
     })
 
     return (
@@ -16,7 +17,7 @@ const Messages = (props) => {
             <div className="messages__content">
                 {messagesItems}
             </div>
-            <SendMessageForm />
+            <SendMessageForm addMessage={props.addMessage} dialogId={props.dialogId}/>
         </div>
     )
 

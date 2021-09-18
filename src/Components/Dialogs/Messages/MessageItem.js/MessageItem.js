@@ -10,7 +10,7 @@ const MessageItem = (props) => {
                 <div className="message__text">
                     <span>{props.messageText}</span>
                 </div>
-                <span className="message__date">time</span>
+                <span className="message__date">{props.createdAt}</span>
             </div>
         </div>
     )

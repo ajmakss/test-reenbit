@@ -13,7 +13,7 @@ const ChatItem = (props) => {
                 </div>
             </div>
 
-            <span>date</span>
+            <span className="chat__date">{props.createdAt}</span>
         </div>
     )
 }
