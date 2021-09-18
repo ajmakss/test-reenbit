@@ -1,13 +1,13 @@
 import React from "react";
-import Chats from "./Chats/Chats";
+import ChatsContainer from "./Chats/ChatsContainer";
 import './Dialogs.scss';
-import Messages from "./Messages/Messages";
+import MessagesContainer from "./Messages/MessagesContainer";
 
 const Dialogs = () => {
     return (
         <div className="dialogs">
-        <Chats/>
-        <Messages/>
-    </div>)
+            <ChatsContainer />
+            <MessagesContainer />
+        </div>)
 }
 export default Dialogs;

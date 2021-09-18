@@ -1,0 +1,29 @@
+.chat__form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+    input {
+        background: #fafafa;
+        box-sizing: border-box;
+        border: none;
+        height: 35px;
+        color: #666;
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px 10px 5px 30px;
+        outline: none;
+    }
+    .chat__search-icon {
+        position: absolute;
+        left: 3%;
+        top: 17%;
+        background: none;
+        border: none;
+        img {
+            width: 15px;
+        }
+    }
+}

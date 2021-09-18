@@ -1,0 +1,14 @@
+.chat {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    &__wrapper {
+        display: flex;
+    }
+    &__context {
+        justify-self: flex-start;
+        display: flex;
+        flex-direction: column;
+
+    }
+}

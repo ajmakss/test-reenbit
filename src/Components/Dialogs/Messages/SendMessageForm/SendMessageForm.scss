@@ -6,15 +6,21 @@
    position: relative;
    input {
        box-sizing: border-box;
-       padding: 5px;
+       padding: 5px 15px;
        height: 45px;
        width: 90%;
        border-radius: 20px;
        border: none;
+       outline: none;
    }
    button {
        position: absolute;
        top: 40%;
        right: 8%;
+       background: none;
+       border: none;
+       img {
+           width: 23px;
+       }
    }
 }

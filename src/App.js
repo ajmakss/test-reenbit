@@ -1,12 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import Dialogs from './Components/Dialogs/Dialogs';
+import { BrowserRouter,Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <Dialogs/>
-    </div>
+
+      <BrowserRouter>
+        <Route path="/:messages?" render={() => <Dialogs />}/>
+    </BrowserRouter>
+
   );
 }
 

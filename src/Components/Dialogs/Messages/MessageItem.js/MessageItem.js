@@ -1,9 +1,18 @@
 import React from "react";
+import Avatar from "../../../Common/Avatar/Avatar";
 import './MessageItem.scss';
 
 const MessageItem = (props) => {
     return (
-        <h3>message</h3>
+        <div className="message message-mine">
+            <Avatar />
+            <div className="message__item">
+                <div className="message__text">
+                    <span>{props.messageText}</span>
+                </div>
+                <span className="message__date">time</span>
+            </div>
+        </div>
     )
 }
 

@@ -1,0 +1,26 @@
+.message {
+    display: flex;
+    &__item {
+        margin-bottom: 20px;
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        height: 50px;
+        width: fit-content;
+        padding: 10px;
+        background: #e0e0e0;
+        font-size: 15px;
+        font-weight: 600;
+        color:  #3c4252;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+    &__date {
+        margin-left: 5px;
+        color: #666;
+    }
+
+}
