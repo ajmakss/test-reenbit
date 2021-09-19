@@ -1,7 +1,12 @@
 .message {
     display: flex;
+    &-mine {
+        justify-content: flex-end;
+    }
     &__item {
         margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
     }
     &__text {
         display: flex;
@@ -11,17 +16,24 @@
         height: 50px;
         width: fit-content;
         padding: 10px;
-        background: #e0e0e0;
+        background: #3c4252;
         font-size: 15px;
         font-weight: 600;
-        color:  #3c4252;
+        color:  #fff;
         border-radius: 20px;
         margin-bottom: 5px;
+    }
+    &__text-mine {
+        color: #3c4252;
+        background: #e0e0e0
     }
     &__date {
         margin-left: 5px;
         color: #666;
         font-size: 10px;
+    }
+    &__date-mine {
+        text-align: right;
     }
 
 }

@@ -6,41 +6,51 @@ let initialState = {
         {
             dialogId: "dialog1",
             messages: [
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you, its last?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 1, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 1, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 1, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 1, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you, its last?', userId: 1, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
             ]
         },
         {
             dialogId: "dialog2",
             messages: [
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 2, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 2, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 2, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 2, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 2, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
             ]
         },
         {
             dialogId: "dialog3",
             messages: [
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 3, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 3, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 3, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 3, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 3, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
             ]
         },
         {
             dialogId: "dialog4",
             messages: [
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1234, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 4, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 4, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 4, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 4, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 4, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+            ]
+        },
+        {
+            dialogId: "dialog5",
+            messages: [
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you?', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
             ]
         },
 

@@ -1,14 +1,13 @@
-import { dialogsAPI } from "../api/api";
 
 
 let initialState = {
     users: [
-        {userId: 1, username: 'Max', avatar:'https://www.pngarts.com/files/11/Avatar-PNG-Free-Download.png', online: true,},
-        {userId: 2, username: 'Ivan', avatar:'https://www.pngarts.com/files/11/Avatar-PNG-Free-Download.png', online: true,},
-        {userId: 3, username: 'Lilia', avatar:'https://www.pngarts.com/files/11/Avatar-PNG-Free-Download.png', online: true,},
+        {userId: 1, username: 'Alice Freeman', avatar:'http://demo.foxthemes.net/socialitev2.1/assets/images/avatars/avatar-3.jpg', online: true,},
+        {userId: 2, username: 'Josefina', avatar:'http://demo.foxthemes.net/socialitev2.1/assets/images/avatars/avatar-3.jpg', online: true,},
+        {userId: 3, username: 'Velazquez', avatar:'https://www.pngarts.com/files/11/Avatar-PNG-Free-Download.png', online: true,},
         {userId: 4, username: 'Valentyn', avatar:'https://www.pngarts.com/files/11/Avatar-PNG-Free-Download.png', online: true,},
-        {userId: 5, username: 'Olesia', avatar:'https://www.pngarts.com/files/11/Avatar-PNG-Free-Download.png', online: true,},
-        {userId: 6, username: 'Ann', avatar:'https://www.pngarts.com/files/11/Avatar-PNG-Free-Download.png', online: true,},
+        {userId: 5, username: 'Barrera', avatar:'https://www.pngarts.com/files/11/Avatar-PNG-Free-Download.png', online: true,},
+        
     ]
 };
 
