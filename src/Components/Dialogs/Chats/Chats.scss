@@ -1,4 +1,11 @@
 .chats {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    height: 100vh;
+    &__wrapper {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
     a {
         color: #3c4252;
         text-decoration: none;

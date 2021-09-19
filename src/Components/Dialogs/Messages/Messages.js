@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SendMessageForm from "./SendMessageForm/SendMessageForm";
 import MessageItem from "./MessageItem.js/MessageItem";
 import './Messages.scss';
@@ -6,6 +6,7 @@ import MessagesHeader from "./MessagesHeader/MessagesHeader";
 import moment from 'moment';
 
 const Messages = (props) => {
+
     let messagesItems = props.messages[0].messages.map(m => {
 
         let date = moment(m.createdAt).format('M/D/gg, h:mm a');
@@ -20,12 +21,12 @@ const Messages = (props) => {
 
     return (
         <div className="messages">
-            <MessagesHeader currentMember={currentMember} />
-            <div className="messages__content">
+            <MessagesHeader currentMember={currentMember} pageYOffset />
+            <div className="messages__content"  >
                 {messagesItems}
             </div>
-            <SendMessageForm addMessage={props.addMessage} currentDialog={props.currentDialog} 
-            getMessage={props.getMessage} memberId={memberId}/>
+            <SendMessageForm addMessage={props.addMessage} currentDialog={props.currentDialog}
+                getMessage={props.getMessage} memberId={memberId} />
         </div>
     )
 

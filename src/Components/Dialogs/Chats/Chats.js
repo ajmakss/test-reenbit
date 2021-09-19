@@ -7,7 +7,7 @@ import moment from 'moment';
 
 const Chats = (props) => {
 
-    let sortedDialogs = props.dialogs.sort((a,b) => {
+    let sortedDialogs = props.dialogs.sort((a, b) => {
         return new Date(b.messages[b.messages.length - 1].createdAt) - new Date(a.messages[a.messages.length - 1].createdAt)
     });
 
@@ -18,15 +18,17 @@ const Chats = (props) => {
         let memberName = (d.messages[d.messages.length - 1].userId === props.auth) ? 'Me' : currentMember.username;
 
         return <NavLink to={`/${d.dialogId}`}>
-            <ChatItem lastMessage={d.messages[d.messages.length - 1].messageText} 
-            createdAt={date}  currentMember={currentMember} memberName={memberName}/>
+            <ChatItem lastMessage={d.messages[d.messages.length - 1].messageText}
+                createdAt={date} currentMember={currentMember} memberName={memberName} />
         </NavLink>
     })
     return (
         <div className="chats">
-            <ChatsHeader auth={props.auth} users={props.users}/>
+            <ChatsHeader auth={props.auth} users={props.users} />
             <h2>Chats</h2>
-            {dialogsItems.sort()}
+            <div className="chats__wrapper">
+                {dialogsItems.sort()}
+            </div>
         </div>
     )
 }
