@@ -1,5 +1,6 @@
 import { dialogsAPI } from "../api/api";
 import moment from 'moment';
+import message from '../audio/message.mp3';
 
 let initialState = {
     dialogs: [
@@ -102,11 +103,13 @@ const dialogsReducer = (state = initialState, action) => {
 export const addMessage = (dialogId, messageText, userId) => ({ type: 'ADD_NEW_MESSAGE', dialogId, messageText, userId });
 
 export const getMessage = (dialogId, userId) => (dispatch) => {
+    let sound = new Audio(message)
     setTimeout(() => {
         dialogsAPI.getMessage()
             .then(resp => {
                 dispatch(addMessage(dialogId, resp.data.value, userId))
             })
+            sound.play()
     }, 10000)
 }
 
