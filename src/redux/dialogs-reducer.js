@@ -11,11 +11,7 @@ let initialState = {
                 { userId: 6 }
             ],
             messages: [
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 1, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you, its last?', userId: 1, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, please go to the meeting room 1B, we have big server issue', userId: 1, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
             ]
         },
         {
@@ -25,11 +21,9 @@ let initialState = {
                 { userId: 6 }
             ],
             messages: [
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 2, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 2, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 2, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 2, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 2, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Quickly come to the meeting room 1B, we have big server issue', userId: 2, createdAt: 'Sat Sep 10 2021 08:00:48 GMT+0300' },
+                { messageId: 2, messageText: 'I\'m having breakfast right now, can\'t you wait for 10 minutes?', userId: 6, createdAt: 'Sat Sep 10 2021 08:05:48 GMT+0300' },
+                { messageId: 3, messageText: 'We are losing money! Quick!', userId: 2, createdAt: 'Sat Sep 10 2021 08:10:48 GMT+0300' },
             ]
         },
         {
@@ -39,11 +33,10 @@ let initialState = {
                 { userId: 6 }
             ],
             messages: [
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 3, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 3, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 3, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 3, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 3, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Have you done your task?', userId: 3, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Yes, I have. I\'ll send you it in a minute', userId: 6, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Ok, you can send it to my email', userId: 3, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Quickly come to the meeting room 1B, we have big server issue', userId: 3, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
             ]
         },
         {
@@ -53,11 +46,11 @@ let initialState = {
                 { userId: 6 }
             ],
             messages: [
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 4, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 4, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 4, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 4, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 4, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, Barrera', userId: 6, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, how are you', userId: 4, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Not bad, thanks. What about you?', userId: 6, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'I\'m good too, but I have to go to a client meeting right now. I\'ll type you later', userId: 4, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Ok, bye', userId: 6, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
             ]
         },
         {
@@ -67,11 +60,16 @@ let initialState = {
                 { userId: 6 }
             ],
             messages: [
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 1, messageText: 'Hi, how are you?', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hello, are you there?', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Yes, who are you', userId: 6, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'I\'m Watt', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'What\'s your name?', userId: 6, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Watt\'s my name', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Yes, what\`s your name?', userId: 6, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'My name is John Watt', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'John what', userId: 6, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Watt\'s my name', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+
             ]
         },
 

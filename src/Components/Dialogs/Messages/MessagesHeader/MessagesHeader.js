@@ -4,7 +4,7 @@ import Avatar from '../../../Common/Avatar/Avatar'
 const MessagesHeader = (props) => {
     return (
         <div className="messages__header">
-            <Avatar avatar={props.currentMember.avatar} online={true}/>
+            <Avatar avatar={props.currentMember.avatar} online={props.currentMember.online}/>
             <span>{props.currentMember.username}</span>
         </div>
     )
