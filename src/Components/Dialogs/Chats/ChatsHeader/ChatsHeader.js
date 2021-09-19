@@ -4,9 +4,10 @@ import './ChatsHeader.scss';
 import FindChatForm from "./FindChatForm/FindChatForm";
 
 const ChatsHeader = (props) => {
+    let currentUser = props.users.filter(u => u.userId === props.auth)[0];
     return (
        <div className="chats__header">
-            <Avatar/>
+            <Avatar avatar={currentUser.avatar}/>
             <div className="chats__search">
                 <FindChatForm/>
             </div>

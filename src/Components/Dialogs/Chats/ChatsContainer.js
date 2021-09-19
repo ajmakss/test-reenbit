@@ -7,12 +7,14 @@ import ChatsHeader from "./ChatsHeader/ChatsHeader";
 
 const ChatsContainer = (props) => {
     return (
-        <Chats dialogs={props.dialogs}/>
+        <Chats dialogs={props.dialogs} users={props.users} auth={props.auth}/>
     )
 }
 
 const mapStateToProps = (state) => ({
-    dialogs: state.dialogs.dialogs
+    dialogs: state.dialogs.dialogs,
+    users: state.users.users,
+    auth: state.auth.userId
 });
 
 export default connect(mapStateToProps)(ChatsContainer);

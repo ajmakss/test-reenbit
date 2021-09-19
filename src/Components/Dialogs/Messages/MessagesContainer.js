@@ -1,16 +1,19 @@
 import React from "react";
 import { connect } from "react-redux";
 import Messages from "./Messages";
-import { addMessage } from "../../../redux/dialogs-reducer";
+import { addMessage, getMessage } from "../../../redux/dialogs-reducer";
 
 import { withRouter } from 'react-router-dom';
 import { compose } from "redux";
 
 const MessagesContainer = (props) => {
-    let messages = props.dialogs.filter(d => d.dialogId === props.match.params.messages);
+    let currentDialog = props.match.params.messages;
+    let messages = props.dialogs.filter(d => d.dialogId === currentDialog);
     return (
         <Messages messages={messages} addMessage={props.addMessage}
-         dialogId={props.match.params.messages} auth={props.auth} users={props.users}/>
+        currentDialog={currentDialog} auth={props.auth} 
+         users={props.users} getMessage={props.getMessage}
+         currentDialog={currentDialog}/>
     )
 
 }
@@ -21,5 +24,5 @@ const mapStateToProps = (state) => ({
     users: state.users.users
 })
 export default compose(
-    connect(mapStateToProps, {addMessage}),
+    connect(mapStateToProps, {addMessage, getMessage}),
     withRouter)(MessagesContainer)

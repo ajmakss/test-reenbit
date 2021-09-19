@@ -5,7 +5,6 @@ import './MessageItem.scss';
 const MessageItem = (props) => {
 
     let user = props.users.filter(u => u.userId === props.userId)[0];
-    console.log(user)
     return (
         <>
             <div className={`message ${props.userId === props.auth ? 'message-mine' : ''}`} >

@@ -7,8 +7,9 @@ const SendMessageForm = (props) => {
     const message = React.createRef();
 
     const onSendMessage = () => {
-        props.addMessage(props.dialogId, message.current.value, 1221);
+        props.addMessage(props.currentDialog, message.current.value, 6);
         message.current.value = '';
+        props.getMessage(props.currentDialog, props.memberId.userId)
     }
     return (
         <div className="add-message">

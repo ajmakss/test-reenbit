@@ -1,6 +1,8 @@
 
 let initialState = {
-    userId: 1221,
+    userId: 6,
+    avatar:'https://www.pngarts.com/files/11/Avatar-PNG-Free-Download.png',
+    userName: 'Me',
     email: null,
     login: null,
 };

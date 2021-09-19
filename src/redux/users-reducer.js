@@ -7,6 +7,8 @@ let initialState = {
         {userId: 3, username: 'Velazquez', avatar:'https://www.pngarts.com/files/11/Avatar-PNG-Free-Download.png', online: true,},
         {userId: 4, username: 'Valentyn', avatar:'https://www.pngarts.com/files/11/Avatar-PNG-Free-Download.png', online: true,},
         {userId: 5, username: 'Barrera', avatar:'https://www.pngarts.com/files/11/Avatar-PNG-Free-Download.png', online: true,},
+        {userId: 6, username: 'Me', avatar:'https://www.pngarts.com/files/11/Avatar-PNG-Free-Download.png', online: true,},
+        
         
     ]
 };

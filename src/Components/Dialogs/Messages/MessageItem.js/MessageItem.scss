@@ -10,10 +10,9 @@
     }
     &__text {
         display: flex;
-        align-items: center;
+        height: fit-content;
         justify-content: center;
         box-sizing: border-box;
-        height: 50px;
         width: fit-content;
         padding: 10px;
         background: #3c4252;
