@@ -9,7 +9,7 @@ const ChatsHeader = (props) => {
        <div className="chats__header">
             <Avatar avatar={currentUser.avatar}/>
             <div className="chats__search">
-                <FindChatForm/>
+                <FindChatForm setChatFilter={props.setChatFilter} chatFilter={props.chatFilter}/>
             </div>
        </div>
     )

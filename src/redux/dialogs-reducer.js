@@ -74,6 +74,7 @@ let initialState = {
         },
 
     ],
+    chatFilter: '',
 };
 
 const dialogsReducer = (state = initialState, action) => {
@@ -93,12 +94,18 @@ const dialogsReducer = (state = initialState, action) => {
                 : d)
 
             return cloneState;
+        case 'SET_CHAT_FILTER':
+            return {
+                ...state,
+                chatFilter: action.filterText
+            }
         default:
             return state
     }
 };
 
 export const addMessage = (dialogId, messageText, userId) => ({ type: 'ADD_NEW_MESSAGE', dialogId, messageText, userId });
+export const setChatFilter = (filterText) => ({type: 'SET_CHAT_FILTER', filterText});
 
 export const getMessage = (dialogId, userId) => (dispatch) => {
     let sound = new Audio(message)
