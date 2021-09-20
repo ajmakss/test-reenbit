@@ -8,8 +8,8 @@ const ChatItem = (props) => {
             <div className="chat__wrapper">
                 <Avatar avatar={props.currentMember.avatar} online={props.currentMember.online}/>
                 <div className="chat__context">
-                    <span>{props.memberName}</span>
-                    <span>{props.lastMessage.length > 20 ? `${props.lastMessage.substring(0, 20)}...` : props.lastMessage}</span>
+                    <span className="chat__name">{props.memberName}</span>
+                    <span className="chat__lastMessage">{props.lastMessage.length > 40 ? `${props.lastMessage.substring(0, 20)}...` : props.lastMessage}</span>
                 </div>
             </div>
 

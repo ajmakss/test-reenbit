@@ -7,7 +7,7 @@ let initialState = {
         {userId: 3, username: 'Velazquez', avatar:'https://images.unsplash.com/photo-1558730234-d8b2281b0d00?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsYWNrJTIwYW5kJTIwd2hpdGUlMjBwb3J0cmFpdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80', online: false,},
         {userId: 4, username: 'Barrera', avatar:'https://st4.depositphotos.com/1049680/i/600/depositphotos_309844750-stock-photo-beautiful-brunette-woman-smiling-cheerful.jpg', online: true,},
         {userId: 5, username: 'John', avatar:'https://images.pexels.com/photos/3277804/pexels-photo-3277804.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', online: false,},
-        {userId: 6, username: 'Me', avatar:'https://www.pngarts.com/files/11/Avatar-PNG-Free-Download.png', online: true,},
+        {userId: 6, username: 'Me', avatar: null, online: true,},
         
         
     ]

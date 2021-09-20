@@ -7,7 +7,7 @@ const ChatsHeader = (props) => {
     let currentUser = props.users.filter(u => u.userId === props.auth)[0];
     return (
        <div className="chats__header">
-            <Avatar avatar={currentUser.avatar}/>
+            <Avatar avatar={currentUser.avatar} online={true}/>
             <div className="chats__search">
                 <FindChatForm setChatFilter={props.setChatFilter} chatFilter={props.chatFilter}/>
             </div>
