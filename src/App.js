@@ -7,7 +7,7 @@ function App() {
   return (
 
       <BrowserRouter>
-        <Route path="/:messages?" render={() => <Dialogs />}/>
+        <Dialogs/>
     </BrowserRouter>
 
   );

@@ -8,4 +8,21 @@
         color: #3c4252;
         font-weight: 500;
     }
+    &__back {
+        cursor: pointer;
+        position: relative;
+        display: none;
+        button {
+            background: none;
+            border: none;
+        }
+    }
+}
+
+@media (max-width: 600px) { 
+    .messages {
+        &__back {
+            display: block;
+        }
+    }
 }

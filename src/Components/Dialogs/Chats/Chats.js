@@ -33,7 +33,7 @@ const Chats = (props) => {
         let currentMember = props.users.filter(u => u.userId === memberId.userId)[0];
         let memberName = (d.messages[d.messages.length - 1].userId === props.auth) ? 'Me' : currentMember.username;
 
-        return <NavLink to={`/${d.dialogId}`}>
+        return <NavLink to={`/${d.dialogId}`} className="chat__item">
             <ChatItem lastMessage={d.messages[d.messages.length - 1].messageText}
                 createdAt={date} currentMember={currentMember} memberName={memberName} />
         </NavLink>

@@ -1,6 +1,6 @@
 .chats {
     display: grid;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 160px 100px 3fr;
     height: 100vh;
     &__wrapper {
         overflow-x: hidden;
