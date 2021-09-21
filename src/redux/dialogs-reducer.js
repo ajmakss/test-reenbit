@@ -13,7 +13,7 @@ let initialState = {
                 { userId: 6, username: 'Me' }
             ],
             messages: [
-                { messageId: 1, messageText: 'Hi, please go to the meeting room 1B, we have big server issue', userId: 1, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, please go to the meeting room 1B, we have big server issue', userId: 1, createdAt: 'Sat Sep 18 2021 08:10:48 GMT+0300' },
             ]
         },
         {
@@ -23,9 +23,9 @@ let initialState = {
                 { userId: 6, username: 'Me' }
             ],
             messages: [
-                { messageId: 1, messageText: 'Quickly come to the meeting room 1B, we have big server issue', userId: 2, createdAt: 'Sat Sep 10 2021 08:00:48 GMT+0300' },
-                { messageId: 2, messageText: 'I\'m having breakfast right now, can\'t you wait for 10 minutes?', userId: 6, createdAt: 'Sat Sep 10 2021 08:05:48 GMT+0300' },
-                { messageId: 3, messageText: 'We are losing money! Quick!', userId: 2, createdAt: 'Sat Sep 10 2021 08:10:48 GMT+0300' },
+                { messageId: 1, messageText: 'Quickly come to the meeting room 1B, we have big server issue', userId: 2, createdAt: 'Sat Sep 18 2021 08:06:48 GMT+0300' },
+                { messageId: 2, messageText: 'I\'m having breakfast right now, can\'t you wait for 10 minutes?', userId: 6, createdAt: 'Sat Sep 10 2021 08:07:48 GMT+0300' },
+                { messageId: 3, messageText: 'We are losing money! Quick!', userId: 2, createdAt: 'Sat Sep 10 2021 08:09:48 GMT+0300' },
             ]
         },
         {
@@ -35,10 +35,10 @@ let initialState = {
                 { userId: 6, username: 'Me' }
             ],
             messages: [
-                { messageId: 1, messageText: 'Have you done your task?', userId: 3, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 2, messageText: 'Yes, I have. I\'ll send you it in a minute', userId: 6, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 3, messageText: 'Ok, you can send it to my email', userId: 3, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 4, messageText: 'Quickly come to the meeting room 1B, we have big server issue', userId: 3, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Have you done your task?', userId: 3, createdAt: 'Sat Sep 17 2021 19:07:48 GMT+0300' },
+                { messageId: 2, messageText: 'Yes, I have. I\'ll send you it in a minute', userId: 6, createdAt: 'Sat Sep 17 2021 19:10:48 GMT+0300' },
+                { messageId: 3, messageText: 'Ok, you can send it to my email', userId: 3, createdAt: 'Sat Sep 18 2021 19:15:48 GMT+0300' },
+                { messageId: 4, messageText: 'Quickly come to the meeting room 1B, we have big server issue', userId: 3, createdAt:'Sat Sep 10 2021 08:08:48 GMT+0300' },
             ]
         },
         {
@@ -48,11 +48,11 @@ let initialState = {
                 { userId: 6, username: 'Me' }
             ],
             messages: [
-                { messageId: 1, messageText: 'Hi, Barrera', userId: 6, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 2, messageText: 'Hi, how are you', userId: 4, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 3, messageText: 'Not bad, thanks. What about you?', userId: 6, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 4, messageText: 'I\'m good too, but I have to go to a client meeting right now. I\'ll type you later', userId: 4, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 5, messageText: 'Ok, bye', userId: 6, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hi, Barrera', userId: 6, createdAt: 'Sat Sep 09 2021 12:00:48 GMT+0300' },
+                { messageId: 2, messageText: 'Hi, how are you', userId: 4, createdAt: 'Sat Sep 09 2021 12:01:48 GMT+0300' },
+                { messageId: 3, messageText: 'Not bad, thanks. What about you?', userId: 6, createdAt: 'Sat Sep 09 2021 12:02:48 GMT+0300' },
+                { messageId: 4, messageText: 'I\'m good too, but I have to go to a client meeting right now. I\'ll type you later', userId: 4, createdAt: 'Sat Sep 09 2021 12:05:48 GMT+0300' },
+                { messageId: 5, messageText: 'Ok, bye', userId: 6, createdAt: 'Sat Sep 09 2021 12:09:48 GMT+0300' },
             ]
         },
         {
@@ -62,15 +62,15 @@ let initialState = {
                 { userId: 6, username: 'Me' }
             ],
             messages: [
-                { messageId: 1, messageText: 'Hello, are you there?', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 2, messageText: 'Yes, who are you', userId: 6, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 3, messageText: 'I\'m Watt', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 4, messageText: 'What\'s your name?', userId: 6, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 5, messageText: 'Watt\'s my name', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 6, messageText: 'Yes, what\'s your name?', userId: 6, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 7, messageText: 'My name is John Watt', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 8, messageText: 'John what', userId: 6, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
-                { messageId: 9, messageText: 'Watt\'s my name', userId: 5, createdAt: 'Sat Sep 18 2021 19:07:48 GMT+0300' },
+                { messageId: 1, messageText: 'Hello, are you there?', userId: 5, createdAt: 'Sat Sep 08 2021 12:09:48 GMT+0300' },
+                { messageId: 2, messageText: 'Yes, who are you', userId: 6, createdAt: 'Sat Sep 08 2021 17:39:48 GMT+0300' },
+                { messageId: 3, messageText: 'I\'m Watt', userId: 5, createdAt: 'Sat Sep 08 2021 17:40:48  GMT+0300' },
+                { messageId: 4, messageText: 'What\'s your name?', userId: 6, createdAt: 'Sat Sep 08 2021 17:47:48  GMT+0300' },
+                { messageId: 5, messageText: 'Watt\'s my name', userId: 5, createdAt: 'Sat Sep 08 2021 17:48:48  GMT+0300' },
+                { messageId: 6, messageText: 'Yes, what\'s your name?', userId: 6, createdAt: 'Sat Sep 08 2021 17:51:48 GMT+0300' },
+                { messageId: 7, messageText: 'My name is John Watt', userId: 5, createdAt: 'Sat Sep 08 2021 17:56:48 GMT+0300' },
+                { messageId: 8, messageText: 'John what', userId: 6, createdAt: 'Sat Sep 08 2021 18:00:48 GMT+0300' },
+                { messageId: 9, messageText: 'Watt\'s my name', userId: 5, createdAt:'Sat Sep 08 2021 18:09:48 GMT+0300' },
 
             ]
         },
@@ -83,7 +83,7 @@ const dialogsReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'ADD_NEW_MESSAGE':
             let newMessage = {
-                messageId: nextId(action.dialogId),
+                messageId: nextId(),
                 messageText: action.messageText,
                 userId: action.userId,
                 createdAt: moment().format()
