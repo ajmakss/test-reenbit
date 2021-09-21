@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route } from "react-router";
+import { Route, Redirect } from "react-router";
 import ChatsContainer from "./Chats/ChatsContainer";
 import './Dialogs.scss';
 import MessagesContainer from "./Messages/MessagesContainer";
@@ -27,6 +27,7 @@ const Dialogs = () => {
         <div className="dialogs">
             <Route exact={size < 600 ? true : false} path="/" render={() => <ChatsContainer />} />
             <Route path="/:dialogId" render={() => <MessagesContainer />} />
+            <Redirect from="*" to="/" />
         </div>)
 }
 export default Dialogs;

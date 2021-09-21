@@ -2,8 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import Messages from "./Messages";
 import { addMessage, getMessage } from "../../../redux/dialogs-reducer";
-
-import { withRouter } from 'react-router-dom';
+import { withRouter, Redirect } from 'react-router-dom';
 import { compose } from "redux";
 import { getAuthUser, getDialogs, getUsers } from "../../../redux/selectors";
 
@@ -12,9 +11,10 @@ const MessagesContainer = ({ match, dialogs, addMessage, auth, users, getMessage
     let currentDialog = match.params.dialogId;
     let messages = dialogs.filter(d => d.dialogId === currentDialog);
 
+    if (messages.length == 0) return <Redirect from="*" to="/" />
     return <Messages messages={messages} addMessage={addMessage}
         currentDialog={currentDialog} auth={auth}
-        users={users} getMessage={getMessage}/>
+        users={users} getMessage={getMessage} />
 
 };
 

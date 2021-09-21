@@ -9,7 +9,10 @@ const ChatsHeader = ({ auth, users, setChatFilter, chatFilter }) => {
 
     return (
         <div className="chats__header">
-            <Avatar avatar={currentUser.avatar} online={true} />
+            <div className="chats__user">
+                <Avatar avatar={currentUser.avatar} online={true} />
+                <button>Login</button>
+            </div>
             <div className="chats__search">
                 <FindChatForm setChatFilter={setChatFilter} chatFilter={chatFilter} />
             </div>
