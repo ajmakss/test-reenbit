@@ -5,7 +5,6 @@ import './ChatsHeader.scss';
 import FindChatForm from "./FindChatForm/FindChatForm";
 
 const ChatsHeader = ({ auth,  setChatFilter, chatFilter }) => {
-    console.log(auth)
     return (
         <div className="chats__header">
             <div className="chats__user">

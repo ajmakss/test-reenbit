@@ -7,7 +7,6 @@ import './Facebook.scss';
 class Facebook extends React.Component {
 
     responseFacebook = (resp) => {
-        console.log(resp.name);
         this.props.login(resp)
     };
     onLogout = () => {
