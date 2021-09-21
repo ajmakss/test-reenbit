@@ -11,9 +11,9 @@ const authReducer = (state = initialState, action) => {
         case 'LOGIN_USER':
             return {
                 ...state,
-                avatar: action.data.picture.data,
+                avatar: action.data.picture.data.url,
                 userName: action.data.name,
-                isLogin: true,
+                islogin: true,
             };
         case 'LOGOUT_USER':
             return {

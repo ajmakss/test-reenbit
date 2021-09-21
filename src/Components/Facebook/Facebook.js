@@ -4,24 +4,34 @@ import { connect } from "react-redux";
 import { login, logout } from '../../redux/auth-reducer';
 import './Facebook.scss';
 
-const Facebook = (props) => {
+class Facebook extends React.Component {
 
-    const responseFacebook = (resp) => {
-        props.login(resp)
+    responseFacebook = (resp) => {
+        console.log(resp.name);
+        this.props.login(resp)
     };
-    const onLogout = () => {
-        props.logout();
+    onLogout = () => {
+        this.props.logout();
     }
-    if(props.auth.islogin) {
-        return <button onClick={onLogout} className="logout">Logout</button>
-    } else {
-    return <FacebookLogin
-        appId="392919762537820"
-        autoLoad={true}
-        fields="name,email,picture"
-        callback={responseFacebook}
-        size="small" />
-}
+    render() {
+        let fbContent;
+        if (this.props.auth.islogin) {
+            fbContent = <button onClick={this.onLogout} className="logout">Logout</button>
+        } else {
+            fbContent = <FacebookLogin
+                appId="392919762537820"
+                autoLoad={true}
+                fields="name,email,picture"
+                onClick={this.componentClicked}
+                callback={this.responseFacebook}
+                size="small" />
+        }
+        return (
+            <div>
+                {fbContent}
+            </div>
+        )
+    }
 }
 
 let mapStateToProps = (state) => ({
