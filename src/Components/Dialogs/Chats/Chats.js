@@ -13,10 +13,10 @@ const Chats = ({users, auth,setChatFilter, chatFilter, dialogs}) => {
         let lastMessage = d.messages[d.messages.length - 1];
         let date = moment(lastMessage.createdAt).format('ll');
 
-        let currentMember = getCurrentMemember(d.members, auth, users);
+        let currentMember = getCurrentMemember(d.members, auth.userId, users);
 
 
-        let memberName = (lastMessage.userId === auth) ? 'Me' : currentMember.username;
+        let memberName = (lastMessage.userId === auth.userId) ? 'Me' : currentMember.username;
 
         return <NavLink to={`/${d.dialogId}`} className="chat__item" key={`${d.dialogId}`}>
             <ChatItem lastMessage={d.messages[d.messages.length - 1].messageText}

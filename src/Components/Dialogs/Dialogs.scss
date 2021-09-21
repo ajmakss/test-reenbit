@@ -6,7 +6,7 @@ body {
     grid-template-columns: 3fr 5fr;
     height: 100vh;
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .dialogs {
         grid-template-columns: 1fr;
     }

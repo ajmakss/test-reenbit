@@ -19,7 +19,7 @@ const ChatsContainer = ({users, auth,setChatFilter, chatFilter, dialogs}) => {
 const mapStateToProps = (state) => ({
     dialogs: sortDialogsByDate(state),
     users: getUsers(state),
-    auth: getAuthUser(state),
+    auth: state.auth,
     chatFilter: state.dialogs.chatFilter
 });
 

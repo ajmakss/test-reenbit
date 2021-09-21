@@ -1,21 +1,32 @@
 
 let initialState = {
     userId: 6,
-    avatar:'https://www.pngarts.com/files/11/Avatar-PNG-Free-Download.png',
-    userName: 'Me',
-    email: null,
-    login: null,
+    avatar: null,
+    userName: null,
+    islogin: false,
 };
 
 const authReducer = (state = initialState, action) => {
     switch (action.type) {
-        
+        case 'LOGIN_USER':
+            return {
+                ...state,
+                avatar: action.data.picture.data,
+                userName: action.data.name,
+                isLogin: true,
+            };
+        case 'LOGOUT_USER':
+            return {
+                ...state,
+                avatar: null,
+                userName: null,
+                islogin: false,
+            }
         default:
             return state
     }
 };
 
-export const addMessage = (dialogId, messageText, userId) => ({ type: 'ADD_NEW_MESSAGE', dialogId, messageText, userId });
-
-
+export const login = (data) => ({ type: 'LOGIN_USER', data });
+export const logout = () => ({ type: 'LOGOUT_USER' });
 export default authReducer;

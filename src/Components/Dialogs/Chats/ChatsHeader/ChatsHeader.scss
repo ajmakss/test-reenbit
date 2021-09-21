@@ -11,15 +11,10 @@
     &__user {
         display: flex;
         align-items: center;
-        button {
-            width: 70px;
-            height: 30px;
-            background: #3c4252;
-            border: 1px solid #e7e7e7;
-            color: white;
-            border-radius: 20px;
-            font-weight: 500;
-            font-size: 15px;
+        span {
+             font-size: 23px;
+        color: #3c4252;
+        font-weight: 500;
         }
     }
 }

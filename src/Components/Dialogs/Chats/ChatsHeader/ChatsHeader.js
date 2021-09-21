@@ -1,17 +1,17 @@
 import React from "react";
 import Avatar from "../../../Common/Avatar/Avatar";
+import Facebook from "../../../Facebook/Facebook";
 import './ChatsHeader.scss';
 import FindChatForm from "./FindChatForm/FindChatForm";
 
-const ChatsHeader = ({ auth, users, setChatFilter, chatFilter }) => {
-
-    let currentUser = users.filter(u => u.userId === auth)[0];
+const ChatsHeader = ({ auth,  setChatFilter, chatFilter }) => {
 
     return (
         <div className="chats__header">
             <div className="chats__user">
-                <Avatar avatar={currentUser.avatar} online={true} />
-                <button>Login</button>
+                <Avatar avatar={auth.avatar} online={auth.islogin} />
+                {auth.islogin ? <span>{auth.userName}</span> : null}
+                <Facebook/>
             </div>
             <div className="chats__search">
                 <FindChatForm setChatFilter={setChatFilter} chatFilter={chatFilter} />

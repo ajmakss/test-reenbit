@@ -25,7 +25,7 @@ const Dialogs = () => {
     
     return (
         <div className="dialogs">
-            <Route exact={size < 600 ? true : false} path="/" render={() => <ChatsContainer />} />
+            <Route exact={size < 700 ? true : false} path="/" render={() => <ChatsContainer />} />
             <Route path="/:dialogId" render={() => <MessagesContainer />} />
             <Redirect from="*" to="/" />
         </div>)
