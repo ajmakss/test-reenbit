@@ -17,10 +17,12 @@ const Dialogs = () => {
             handleResize();
             return () => window.removeEventListener("resize", handleResize);
         }, []);
+
         return windowSize;
     }
 
     const size = useWindowSize()
+    
     return (
         <div className="dialogs">
             <Route exact={size < 600 ? true : false} path="/" render={() => <ChatsContainer />} />

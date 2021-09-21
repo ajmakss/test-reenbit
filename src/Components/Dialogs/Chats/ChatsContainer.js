@@ -3,19 +3,23 @@ import { connect } from "react-redux";
 import { setChatFilter } from "../../../redux/dialogs-reducer";
 import Chats from "./Chats";
 import './Chats.scss';
+import {getAuthUser, getUsers, sortDialogsByDate} from '../../../redux/selectors';
+import { filterChatsBySearch } from "../../../utility/utility";
 
-const ChatsContainer = (props) => {
+const ChatsContainer = ({users, auth,setChatFilter, chatFilter, dialogs}) => {
+    
+    let filtedDialogs = filterChatsBySearch(dialogs,chatFilter);
+
     return (
-        <Chats dialogs={props.dialogs} users={props.users}
-         auth={props.auth} setChatFilter={props.setChatFilter} 
-         chatFilter={props.chatFilter}/>
+        <Chats dialogs={filtedDialogs} users={users}  auth={auth} setChatFilter={setChatFilter} 
+         chatFilter={chatFilter}/>
     ) 
 }
 
 const mapStateToProps = (state) => ({
-    dialogs: state.dialogs.dialogs,
-    users: state.users.users,
-    auth: state.auth.userId,
+    dialogs: sortDialogsByDate(state),
+    users: getUsers(state),
+    auth: getAuthUser(state),
     chatFilter: state.dialogs.chatFilter
 });
 

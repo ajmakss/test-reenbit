@@ -2,29 +2,23 @@ import React from "react";
 import Avatar from "../../../Common/Avatar/Avatar";
 import './MessageItem.scss';
 
-const MessageItem = (props) => {
+const MessageItem = ({ messageText, createdAt, auth, userId, users }) => {
 
-    let user = props.users.filter(u => u.userId === props.userId)[0];
+    let user = users.filter(u => u.userId === userId)[0];
     return (
-        <>
-            <div className={`message ${props.userId === props.auth ? 'message-mine' : ''}`} >
-                {props.userId === props.auth ? null : <Avatar avatar={user.avatar}/> }
-                <div className="message__item">
-                    <div className={`message__text ${props.userId === props.auth ? 'message__text-mine' : ''}`}>
-                        <span>{props.messageText}</span>
-                    </div>
-                    <span className={`message__date ${props.userId === props.auth ? 'message__date-mine' : ''}`}>{props.createdAt}</span>
+
+        <div className={`message ${userId === auth ? 'message-mine' : ''}`} >
+
+            {userId === auth ? null : <Avatar avatar={user.avatar} />}
+            <div className="message__item">
+                <div className={`message__text ${userId === auth ? 'message__text-mine' : ''}`}>
+                    <span>{messageText}</span>
                 </div>
+                <span className={`message__date ${userId === auth ? 'message__date-mine' : ''}`}>{createdAt}</span>
             </div>
-            {/* <div className="message message-mine">
-                <div className="message__item">
-                    <div className="message__text  message__text-mine">
-                        <span>{props.messageText}</span>
-                    </div>
-                    <span className="message__date message__date-mine">{props.createdAt}</span>
-                </div>
-            </div> */}
-        </>
+
+        </div>
+
 
     )
 }
