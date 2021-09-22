@@ -19,11 +19,12 @@ class Facebook extends React.Component {
         } else {
             fbContent = <FacebookLogin
                 appId="392919762537820"
-                autoLoad={true}
+                autoLoad={false}
                 fields="name,email,picture"
                 onClick={this.componentClicked}
                 callback={this.responseFacebook}
-                size="small" />
+                size="small"
+                cssClass="login" />
         }
         return (
             <div>
